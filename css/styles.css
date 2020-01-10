@@ -5,4 +5,26 @@
 .border2 {
   border-style: solid;
   border-color: #DDBDCD;
+  background-color: #f2b8d5;
 }
+
+.bordergreen {
+  background-color: #DEFCE6;
+}
+
+.borderblue {
+  background-color: #BBDEF7;
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.px-2 {
+  padding: 5px;
+}
+
+.px3 {
+  padding: 5px;
+}
+

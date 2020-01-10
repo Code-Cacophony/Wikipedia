@@ -6,44 +6,77 @@
     <title>Wikipedia, the Free Encyclopedia</title>
   </head>
   <body>
-    <div class="container-{breakpoint}">
+    <div class="container-fluid">
+      <div class="col-sm-1">
+        <!--Vertical Navigation Bar-->
+        <ul class="nav flex-column">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">WIKI IMG</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Main Page</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Contents</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Featured content</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Current events</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Random article</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Donate to Wikipedia</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Wikipedia store</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-1">
+        <!--Horizontal Navigation Bar-->
+        <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Main Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Talk</a>   
+            </li>
+            <li class="nav-item pull-right">
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </li>
+            <li class="nav-item pull-right">
+              <a class="nav-link active" href="#">View History</a>
+            </li>
+            <li class="nav-item pull-right">
+                <a class="nav-link active" href="#">View Source</a>
+            </li>
+            <li class="nav-item pull-right">
+                <a class="nav-link active" href="#">Read</a>
+            </li>
+          </ul>
+        </div>
 
 
-      <!--Navigation Bar-->
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Main Page</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Talk</a>   
-        </li>
-        <li class="nav-item pull-right">
-            <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </li>
-        <li class="nav-item pull-right">
-          <a class="nav-link active" href="#">View History</a>
-        </li>
-        <li class="nav-item pull-right">
-            <a class="nav-link active" href="#">View Source</a>
-        </li>
-        <li class="nav-item pull-right">
-            <a class="nav-link active" href="#">Read</a>
-        </li>
-      </ul>
 
 
       <!--Columns start here-->
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row gray">
+          <div class="col-lg-3">
             <h3>Welcome to Wikipedia,</h3>
             <p>the free encyclopedia that anyone can edit.
                 5,993,440 articles in English</p>
           </div>
-          <div class="col-lg-2"></div>
+          <div class="col-lg-2">TEST</div>
           <div class="col-lg-2">
             <ul>
               <li>Arts</li>
@@ -64,9 +97,11 @@
             <li>All portals</li>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
             <div class="col-lg-6">
-              <div class="panel panel-success">
+              <div class="panel panel-success bordergreen px-2">
               <h3 class="bg-success">From today's featured article</h3>
                 Reed beds in Ham Wall
                 Reed beds in Ham Wall
@@ -90,8 +125,8 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="panel panel-primary">
-              <h4 class="bg-primary">In the news</h4>
+              <div class="panel panel-primary borderblue">
+              <h4 class="bg-primary px3">In the news</h4>
                 Ukraine International Airlines Flight 752 aircraft in 2019
                 UIA Flight 752 aircraft
                 Ukraine International Airlines Flight 752 (aircraft pictured) crashes shortly after takeoff from Tehran, Iran, killing all 176 people on board.
@@ -132,14 +167,16 @@
           </div>
         </div>
           <div class="row">
-            <div class="col-lg-12">Other areas of Wikipedia
+            <div class="col-lg-12">
+              <h4 class="panel bg-light">Other areas of Wikipedia</h4>
                 Community portal – Bulletin board, projects, resources and activities covering a wide range of Wikipedia areas.
                 Help desk – Ask questions about using Wikipedia.
                 Local embassy – For Wikipedia-related communication in languages other than English.
                 Reference desk – Serving as virtual librarians, Wikipedia volunteers tackle your questions on a wide range of subjects.
                 Site news – Announcements, updates, articles and press releases on Wikipedia and the Wikimedia Foundation.
                 Village pump – For discussions about Wikipedia itself, including areas for technical issues and policies.
-                Wikipedia's sister projects
+                
+                <h4 class="panel bg-light">Wikipedia's sister projects</h4>
                 Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects:
                 
                 Commons Commons
@@ -155,7 +192,7 @@
                 Free learning materials and activities Wikivoyage Wikivoyage
                 Free travel guide Wiktionary Wiktionary
                 Dictionary and thesaurus
-                Wikipedia languages
+                <h4 class="panel bg-light">Wikipedia languages</h4>
                 This Wikipedia is written in English. Started in 2001, it currently contains 5,993,440 articles. Many other Wikipedias are available; some of the largest are listed below.
                 
                 More than 1,000,000 articles: العربيةDeutschEspañolFrançaisItalianoNederlands日本語PolskiPortuguêsРусскийSvenskaTiếng Việt中文
@@ -164,9 +201,7 @@
                 Complete list of Wikipedias</div>
           </div>
       </div>
-
-
-
+    </div>
 
 
 
